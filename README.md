@@ -12,6 +12,14 @@ bench get-app $URL_OF_THIS_REPO --branch version-16
 bench install-app russian_translation
 ```
 
+### Features
+
+- Enables the Russian (`ru`) language and makes it searchable as `Russian` or `Русский`.
+- Uses the Russian translation catalogs shipped with the installed Frappe and ERPNext apps.
+- Re-applies the language setup after migrations.
+
+Run `bench build` after installing the app or updating translation catalogs to compile them.
+
 ### Contributing
 
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:

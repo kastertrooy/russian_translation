@@ -5,6 +5,9 @@ app_description = "Russian language translation for ERPNext"
 app_email = "kaster.trooy2@gmail.com"
 app_license = "mit"
 
+after_install = "russian_translation.install.ensure_russian_language"
+after_migrate = ["russian_translation.install.ensure_russian_language"]
+
 # Apps
 # ------------------
 
@@ -278,4 +281,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
